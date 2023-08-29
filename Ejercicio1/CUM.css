@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #041c63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+#Tabla {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+#Tabla th, #Tabla td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#Tabla th {
+    background-color: #780a0a;
+    color: white;
+}
+
+#Tabla tr:hover {
+    background-color: #f2f2f2;
+}
+
+#nota {
+    margin: 20px;
+    margin-left: 270px;
+    padding: 15px;
+    background-color: white;
+    border: 5px solid #163798;
+    border-radius: 5px;
+    width: 70%;
+}
+
+#nota h2{
+    text-align: center;
+}
