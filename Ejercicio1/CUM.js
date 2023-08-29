@@ -2,10 +2,36 @@ const tableBody = document.getElementById('Tabla').getElementsByTagName('tbody')
 let Notas = [];
 
 while (true) {
-    // Obtiene la información del usuario
-    let materia = prompt('Nombre de la materia:');
-    let notaFinal = parseFloat(prompt('Nota final:'));
-    let UV = parseFloat(prompt('Unidades valorativas:'));
+    let materia;
+    let notaFinal;
+    let UV;
+    
+    while (true) {
+        materia = prompt('Nombre de la materia:');
+        if (materia) {
+            break;
+        } else {
+            alert("Debe ingresar una materia");
+        }
+    }
+
+    while (true) {
+        notaFinal = parseFloat(prompt('Nota final:'));
+        if (!isNaN(notaFinal) && notaFinal >= 0 && notaFinal <= 10) {
+            break;
+        } else {
+            alert("Ingrese una nota válida");
+        }
+    }
+
+    while (true) {
+        UV = parseFloat(prompt('Unidades valorativas:'));
+        if (!isNaN(UV) && UV >= 3 && UV <= 4) {
+            break;
+        } else {
+            alert("Ingrese 3 o 4 UV");
+        }
+    }
 
     // Almacena los datos
     Notas.push({ materia, notaFinal, UV });
