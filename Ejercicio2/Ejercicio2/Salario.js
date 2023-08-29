@@ -1,7 +1,35 @@
-var nombreEmpleado = prompt('Introduzca el nombre del empleado:', '');
-var cargo = prompt('Introduzca el cargo que ejerce: ', '');
-var horasTrabajadas = prompt('Introduzca las horas trabajadas en el mes: ', '');
+while (true) {
+    var nombreEmpleado = prompt('Introduzca el nombre del empleado:', '');
+    if (isNaN(nombreEmpleado)) {
+        break;
+    } else {
+        alert("Debe ingresar un nombre");
+    }
+}
+while (true) {
+    var cargo = prompt('Introduzca el cargo que ejerce: ', '');
+    if(isNaN(cargo)){
+        break;
+    } else {
+        alert("Debe ingresar el cargo que ejerce");
+    }
+}
+while (true) {
+    var horasTrabajadas = prompt('Introduzca las horas trabajadas en el mes: ', '');
+    if (!isNaN(horasTrabajadas)) {
+        break;
+    } else {
+        alert("Debe ingresar las horas trabajadas en el mes");
+    }
+}
+while (true) {
 var pagoHora = prompt('Introduzca cuanto se pago por hora: ', '');
+if (!isNaN(pagoHora)){
+    break;
+} else {
+    alert("Debe ingresar cuanto se le pago por hora")
+}
+}
 var salarioNeto, ISS, AFP, Renta, salarioBase;
 
 salarioBase = horasTrabajadas * pagoHora;
